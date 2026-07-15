@@ -386,10 +386,38 @@ System Overview
 
     c1, c2, c3, c4 = st.columns(4)
 
-    c1.metric("AI Model", "CNN")
-    c2.metric("Satellite Source", "NASA GIBS")
-    c3.metric("Weather API", "OpenWeather")
-    c4.metric("Model Accuracy", "94.21%")
+     with c1:
+    st.markdown("""
+    <div style="background:#1B4F72;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <h4>AI Model</h4>
+    <h2>CNN</h2>
+    </div>
+    """, unsafe_allow_html=True)
+
+   with c2:
+    st.markdown("""
+    <div style="background:#117A65;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <h4>Satellite Source</h4>
+    <h2>NASA GIBS</h2>
+    </div>
+    """, unsafe_allow_html=True)
+
+  with c3:
+    st.markdown("""
+    <div style="background:#B9770E;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <h4>Weather API</h4>
+    <h2>OpenWeather</h2>
+    </div>
+    """, unsafe_allow_html=True)
+
+with c4:
+    st.markdown("""
+    <div style="background:#922B21;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <h4>Model Accuracy</h4>
+    <h2>94.21%</h2>
+    </div>
+    """, unsafe_allow_html=True)
+
 
     st.markdown("---")
 
