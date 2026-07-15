@@ -338,27 +338,6 @@ page = st.sidebar.radio(
 
 if page == "🏠 Home":
     
-st.markdown("""
-<div style="
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-padding:40px;
-border-radius:25px;
-text-align:center;
-color:white;
-box-shadow:0px 10px 30px rgba(0,0,0,.3);
-margin-bottom:25px;
-">
-
-<h1>🔥 Forest Fire Prediction System</h1>
-
-<h3>AI Powered Forest Fire Detection</h3>
-
-<p>
-CNN + NASA GIBS + NASA FIRMS + OpenWeather API
-</p>
-
-</div>
-""", unsafe_allow_html=True)
     st.markdown(
         """
         <div class="title">
