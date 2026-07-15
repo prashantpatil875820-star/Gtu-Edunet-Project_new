@@ -732,7 +732,7 @@ st.markdown(
 
     <div class="footer">
 
-    Developed with ❤️ by <b>Devendra Patil</b>
+    Developed with ❤️ by <b>Prashant Patil</b>
 
     <br>
 
