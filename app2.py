@@ -386,9 +386,16 @@ System Overview
 
     c1, c2, c3, c4 = st.columns(4)
 
-     with c1:
+    with c1:
     st.markdown("""
-    <div style="background:#1B4F72;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <div style="
+    background:#FFE5D0;
+    color:#8A4B08;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #FFD2B5;
+    ">
     <h4>AI Model</h4>
     <h2>CNN</h2>
     </div>
@@ -396,23 +403,44 @@ System Overview
 
    with c2:
     st.markdown("""
-    <div style="background:#117A65;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <div style="
+    background:#FFE5D0;
+    color:#8A4B08;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #FFD2B5;
+    ">
     <h4>Satellite Source</h4>
     <h2>NASA GIBS</h2>
     </div>
     """, unsafe_allow_html=True)
 
-  with c3:
+   with c3:
     st.markdown("""
-    <div style="background:#B9770E;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <div style="
+    background:#FFE5D0;
+    color:#8A4B08;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #FFD2B5;
+    ">
     <h4>Weather API</h4>
     <h2>OpenWeather</h2>
     </div>
     """, unsafe_allow_html=True)
 
-with c4:
+       with c4:
     st.markdown("""
-    <div style="background:#922B21;color:white;padding:20px;border-radius:15px;text-align:center;">
+    <div style="
+    background:#FFE5D0;
+    color:#8A4B08;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #FFD2B5;
+    ">
     <h4>Model Accuracy</h4>
     <h2>94.21%</h2>
     </div>
