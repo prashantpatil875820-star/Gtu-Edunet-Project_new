@@ -365,7 +365,7 @@ if page == "🏠 Home":
 
         This application predicts forest fire risk using a Deep Learning CNN model.
 
-        <br><br>
+        <br>
 
         ✅ Forest Image Prediction
 
@@ -395,7 +395,7 @@ if page == "🏠 Home":
 
         <h2>🔥 AI Fire Detection</h2>
 
-        <h4>Satellite + Weather Intelligence</h4>
+        <h4>Satellite & Weather Intelligence</h4>
 
         <p>
 
