@@ -213,7 +213,7 @@ page = st.sidebar.radio(
 
         "🛰 Live Satellite",
 
-        "ℹ About"
+        " About"
 
     ]
 
@@ -424,27 +424,7 @@ if page == "🏠 Home":
 
     with right:
 
-        st.markdown("""
-
-        <div class="highlight">
-
-        <h2>🔥 AI Detection</h2>
-
-        <h4>Smart Environmental Intelligence</h4>
-
-        <p>
-
-        Monitor forests using real-time satellite imagery,
-        weather conditions and deep learning for fast,
-        accurate and reliable fire risk prediction.
-
-        </p>
-
-        </div>
-
-        """, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
+     
 
     # ---------------- Workflow ---------------- #
 
