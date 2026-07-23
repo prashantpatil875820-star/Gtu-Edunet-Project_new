@@ -381,44 +381,24 @@ if page == "🏠 Home":
     st.write("")
 
     # Main Section
-    left, right = st.columns([2,1])
+    left = st.container()
 
-    with left:
-        st.markdown("""
-        <div class="card">
+with left:
+    st.markdown("""
+    <div class="card">
 
-        <h3>📋 Project Overview</h3>
+    <h3>📋 Project Overview</h3>
 
-        <div class="feature">🌲 Forest Fire Image Classification</div>
+    <div class="feature">🌲 Forest Fire Image Classification</div>
+    <div class="feature">🛰 Satellite Image Processing</div>
+    <div class="feature">🌦 Weather Data Integration</div>
+    <div class="feature">🔥 Fire Hotspot Detection</div>
+    <div class="feature">📈 Risk Assessment</div>
+    <div class="feature">📊 Analytics Dashboard</div>
 
-        <div class="feature">🛰 Satellite Image Processing</div>
-
-        <div class="feature">🌦 Weather Data Integration</div>
-
-        <div class="feature">🔥 Fire Hotspot Detection</div>
-
-        <div class="feature">📈 Risk Assessment</div>
-
-        <div class="feature">📊 Analytics Dashboard</div>
-
-        </div>
-        """, unsafe_allow_html=True)
-
-    with right:
-        st.markdown("""
-        <div class="highlight">
-
-        <h2>🧠 Artificial Intelligence</h2>
-
-        <p>
-        The prediction engine combines CNN models,
-        satellite imagery, weather information,
-        and hotspot detection to estimate
-        forest fire risk with high accuracy.
-        </p>
-
-        </div>
-        """, unsafe_allow_html=True)
+    </div>
+    """, unsafe_allow_html=True)
+  
 
     # Workflow
     st.markdown("""
