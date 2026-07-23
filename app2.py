@@ -233,29 +233,29 @@ if page == "🏠 Home":
 
     /* Main Background */
     .stApp{
-        background:#f5fff8;
+        background:#fffaf5;
     }
 
-    /* HERO */
+    /* Hero */
     .hero{
-        background:linear-gradient(135deg,#16a34a,#22c55e,#4ade80);
+        background:linear-gradient(135deg,#ff8c00,#ffb347);
         color:white;
-        padding:55px;
-        border-radius:22px;
+        padding:50px;
+        border-radius:20px;
         text-align:center;
-        margin-bottom:30px;
-        box-shadow:0 10px 30px rgba(34,197,94,.25);
+        margin-bottom:25px;
+        box-shadow:0 10px 25px rgba(255,140,0,.25);
     }
 
     .hero h1{
-        font-size:46px;
+        font-size:42px;
         font-weight:700;
-        margin-bottom:15px;
+        margin-bottom:12px;
     }
 
     .hero p{
         font-size:18px;
-        color:#ecfdf5;
+        color:#fff7ed;
         max-width:760px;
         margin:auto;
         line-height:1.8;
@@ -264,96 +264,94 @@ if page == "🏠 Home":
     /* Cards */
     .card{
         background:white;
-        color:#14532d;
-        padding:30px;
-        border-radius:18px;
-        border:1px solid #bbf7d0;
-        box-shadow:0 8px 20px rgba(22,163,74,.12);
+        color:#333;
+        padding:28px;
+        border-radius:16px;
+        border-left:6px solid #ff8c00;
+        box-shadow:0 6px 18px rgba(0,0,0,.08);
     }
 
     .card h3{
-        color:#15803d;
-        font-size:26px;
-        margin-bottom:20px;
+        color:#ff8c00;
+        margin-bottom:18px;
+        font-size:24px;
     }
 
     .feature{
-        padding:15px;
-        margin:10px 0;
-        background:#f0fdf4;
-        border-left:5px solid #22c55e;
-        border-radius:10px;
-        color:#166534;
+        padding:14px 0;
+        border-bottom:1px solid #ececec;
+        color:#555;
         font-size:16px;
-        font-weight:500;
     }
 
-    /* AI Card */
+    .feature:last-child{
+        border-bottom:none;
+    }
+
+    /* Highlight Box */
     .highlight{
-        background:white;
-        color:#14532d;
-        border-radius:18px;
-        padding:30px;
+        background:linear-gradient(135deg,#ff8c00,#ffb347);
+        color:white;
+        border-radius:16px;
+        padding:28px;
         text-align:center;
         height:100%;
-        border:1px solid #bbf7d0;
-        box-shadow:0 8px 20px rgba(22,163,74,.12);
+        box-shadow:0 8px 20px rgba(255,140,0,.25);
     }
 
     .highlight h2{
-        color:#15803d;
+        color:white;
         margin-bottom:15px;
     }
 
     .highlight p{
-        color:#166534;
+        color:#fff7ed;
         line-height:1.8;
     }
 
     /* Workflow */
     .workflow{
         background:white;
-        color:#14532d;
-        padding:30px;
-        border-radius:18px;
-        margin-top:25px;
-        border:1px solid #bbf7d0;
-        box-shadow:0 8px 20px rgba(22,163,74,.12);
+        color:#333;
+        padding:28px;
+        border-radius:16px;
+        margin-top:20px;
+        box-shadow:0 6px 18px rgba(0,0,0,.08);
     }
 
     .workflow h3{
-        color:#15803d;
+        color:#ff8c00;
         margin-bottom:20px;
     }
 
     .step{
-        background:#f0fdf4;
-        border-left:5px solid #22c55e;
-        padding:16px 20px;
-        margin:14px 0;
+        background:#fff7ed;
+        border-left:5px solid #ff8c00;
+        padding:14px 18px;
+        margin:12px 0;
         border-radius:10px;
-        color:#166534;
-        font-weight:500;
+        color:#444;
+        font-size:16px;
     }
 
     /* Metrics */
     div[data-testid="metric-container"]{
         background:white;
-        border:2px solid #22c55e;
-        border-radius:15px;
-        padding:18px;
-        text-align:center;
-        box-shadow:0 6px 18px rgba(22,163,74,.15);
+        border:2px solid #ffd8a8;
+        padding:15px;
+        border-radius:12px;
+        box-shadow:0 5px 12px rgba(0,0,0,.08);
     }
 
     div[data-testid="metric-container"] label{
-        color:#15803d !important;
-        font-weight:600;
+        color:#ff8c00 !important;
+        font-weight:bold;
     }
 
-    div[data-testid="metric-container"] div{
-        color:#166534 !important;
-        font-weight:bold;
+    div[data-testid="metric-container"] [data-testid="stMetricValue"]{
+        color:#333 !important;
+        font-size:28px;
+        font-weight:700;
     }
 
     </style>
@@ -362,10 +360,11 @@ if page == "🏠 Home":
     # Hero
     st.markdown("""
     <div class="hero">
-        <h1>🌲 Forest Fire Risk Prediction System</h1>
+        <h1>🔥 Forest Fire Risk Prediction System</h1>
         <p>
-        An AI-powered platform for predicting forest fire risk using
-        deep learning, satellite imagery, weather data, and hotspot monitoring.
+        An AI-driven platform that predicts forest fire risk using
+        deep learning, satellite imagery, weather information,
+        and hotspot monitoring.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -373,48 +372,67 @@ if page == "🏠 Home":
     # Metrics
     c1, c2, c3, c4 = st.columns(4)
 
-    c1.metric("🤖 Model", "CNN")
-    c2.metric("🛰 Satellite", "NASA GIBS")
-    c3.metric("🌦 Weather", "OpenWeather")
-    c4.metric("🎯 Accuracy", "94.21%")
+    c1.metric("Model", "CNN")
+    c2.metric("Satellite", "NASA GIBS")
+    c3.metric("Weather", "OpenWeather")
+    c4.metric("Accuracy", "94.21%")
 
     st.write("")
 
     # Main Section
-    left = st.container()
+    left, right = st.columns([2,1])
 
-with left:
-    st.markdown("""
-    <div class="card">
+    with left:
+        st.markdown("""
+        <div class="card">
 
-    <h3>📋 Project Overview</h3>
+        <h3>Project Overview</h3>
 
-    <div class="feature">🌲 Forest Fire Image Classification</div>
-    <div class="feature">🛰 Satellite Image Processing</div>
-    <div class="feature">🌦 Weather Data Integration</div>
-    <div class="feature">🔥 Fire Hotspot Detection</div>
-    <div class="feature">📈 Risk Assessment</div>
-    <div class="feature">📊 Analytics Dashboard</div>
+        <div class="feature">🔥 Forest Fire Image Classification</div>
 
-    </div>
-    """, unsafe_allow_html=True)
-  
+        <div class="feature">🛰️ Satellite Image Processing</div>
+
+        <div class="feature">🌦️ Weather Data Integration</div>
+
+        <div class="feature">📍 Fire Hotspot Detection</div>
+
+        <div class="feature">⚠️ Risk Assessment</div>
+
+        <div class="feature">📊 Analytics Dashboard</div>
+
+        </div>
+        """, unsafe_allow_html=True)
+
+    with right:
+        st.markdown("""
+        <div class="highlight">
+
+        <h2>🤖 Artificial Intelligence</h2>
+
+        <p>
+        The prediction engine combines convolutional neural networks,
+        satellite imagery and weather information to estimate forest
+        fire risk with high accuracy.
+        </p>
+
+        </div>
+        """, unsafe_allow_html=True)
 
     # Workflow
     st.markdown("""
     <div class="workflow">
 
-    <h3>⚙ System Workflow</h3>
+    <h3>System Workflow</h3>
 
-    <div class="step">① Enter Geographic Coordinates</div>
+    <div class="step">1️⃣ Enter Geographic Coordinates</div>
 
-    <div class="step">② Retrieve Satellite Imagery</div>
+    <div class="step">2️⃣ Retrieve Satellite Imagery</div>
 
-    <div class="step">③ Predict Fire Risk Using CNN</div>
+    <div class="step">3️⃣ Predict Fire Risk Using CNN</div>
 
-    <div class="step">④ Collect Weather Information</div>
+    <div class="step">4️⃣ Collect Weather Information</div>
 
-    <div class="step">⑤ Generate Risk Analysis Dashboard</div>
+    <div class="step">5️⃣ Generate Risk Analysis Dashboard</div>
 
     </div>
     """, unsafe_allow_html=True)
