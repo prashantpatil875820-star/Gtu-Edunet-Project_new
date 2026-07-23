@@ -455,8 +455,25 @@ if page == "🏠 Home":
 
     with right:
 
-      
-       
+        st.markdown("""
+
+        <div class="highlight">
+
+        <h2>🔥 AI Powered</h2>
+
+        <p>
+
+        Detect potential forest fires using satellite imagery,
+        weather conditions, and a CNN model to provide accurate
+        and reliable fire risk predictions.
+
+        </p>
+
+        </div>
+
+        """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
 
     # ================= WORKFLOW =================
 
