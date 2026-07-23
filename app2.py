@@ -222,7 +222,6 @@ page = st.sidebar.radio(
 # ============================================================
 # HOME PAGE
 # ============================================================
-
 if page == "🏠 Home":
 
     st.markdown("""
@@ -387,7 +386,17 @@ if page == "🏠 Home":
         """, unsafe_allow_html=True)
 
     with right:
-       
+        st.markdown("""
+        <div class="highlight">
+
+        <h2>Artificial Intelligence</h2>
+
+        <p>
+        The prediction engine combines convolutional neural networks,
+        satellite imagery and weather information to estimate forest
+        fire risk with high accuracy.
+        </p>
+
         </div>
         """, unsafe_allow_html=True)
 
