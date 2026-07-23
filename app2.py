@@ -436,7 +436,7 @@ if page == "🏠 Home":
 
     <div style="text-align:center;font-size:28px;">⬇️</div>
 
-    <div class="step">5️⃣ Display Fire Risk + Weather Dashboard</div>
+    <div class="step">5️⃣ Display Fire Risk & Weather Dashboard</div>
 
     </div>
     """, unsafe_allow_html=True)
@@ -789,7 +789,7 @@ elif page == "🛰 Live Satellite":
 
 else:
 
-    st.title("ℹ About Project")
+    st.title("About Project")
 
     st.markdown("""
 
@@ -846,9 +846,7 @@ st.markdown(
 
     <br>
 
-    Forest Fire Prediction using CNN + NASA GIBS +
-    NASA FIRMS + OpenWeather API
-
+    Forest Fire Prediction System 
     </div>
     """,
     unsafe_allow_html=True
